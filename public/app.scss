@@ -184,14 +184,21 @@ body {
                             box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
                         }                        
                         .radio__group {
-                            display: flex;
-                            align-items: center;
                             margin-bottom: 1.5rem;
                             height: 2rem;
-                            .radio__part {
-                                color: grey;
-                                font-size: .9rem;
-                                margin-right: 2rem;
+                            .radio__label {
+                                color: black;
+                                font-size: .8rem;
+                                margin-bottom: .4rem;
+                            }
+                            .radio__container {
+                                display: flex;
+                                align-items: center;
+                                .radio__part {
+                                    color: grey;
+                                    font-size: .75rem;
+                                    margin-right: 2rem;
+                                }
                             }
                         }
                         .select__group {
@@ -216,7 +223,7 @@ body {
                             }
                         }
                         .form__group {
-                            margin-bottom: .3rem;
+                            margin-top: 1rem;
                             .form__input {
                                 padding: .5rem .7rem;
                                 border-bottom: 3px solid transparent;
@@ -235,6 +242,10 @@ body {
                                 margin-top: .4rem;
                                 display: inline-block; 
                                 transition: all .4s;
+                            }
+                            .form__input::placeholder {
+                                font-size: .75rem;
+                                color: black;
                             }
                             .form__input:placeholder-shown + .form__label {
                                 opacity: 0;

@@ -14,19 +14,19 @@
         <div class="all-result">
             <h2 class="header"> Phishing info </h2>
             <div class="result-contaiiner">
-                <% if(phishing === "good") { %>
-                    <p class="result"><%= phishing %></p>
+                <% if(value === "1") { %>
+                    <p class="result"><%= value %></p>
                     <button onclick="showSuccessAlert()">Verify</button>
                 <% } else { %>
-                    <p class="result"><%= phishing %></p>
-                    <button onclick="showConfirmAlert()">Verify</button>
+                    <p class="result"><%= value %></p>
+                    <button onclick="showFailedAlert()">Verify</button>
                 <% } %>
             </div>
         </div>
     </main>
 
     <script>
-        // if bening url, call success
+        // if user profile passes, call success
         function showSuccessAlert() {
             Swal.fire({
                 icon: 'success',
@@ -35,30 +35,12 @@
             });
         }
 
-        // if phishing url, notify continuity
-        function showConfirmAlert() {
+        // otherwise, call failed function
+        function showFailedAlert() {
             Swal.fire({
-                icon: 'warning',
-                title: 'Phishing Url Detected!',
-                text: 'Are you sure you want to proceed?',
-                showCancelButton: true,
-                confirmButtonText: 'Yes, proceed',
-                cancelButtonText: 'Cancel'
-            }).then(result => {
-                if(result.isConfirmed){
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Confirm!',
-                        text: 'Now redirecting'
-                    })
-                    // call the link here
-                } else if (result.dismiss === Swal.DismissReason.cancel){
-                    Swal.fire({
-                        icon: 'info',
-                        title: 'Cancel!',
-                        text: 'You canceled operation'
-                    })
-                }
+                icon: 'error',
+                title: 'Oops! Oh No',
+                text: 'Goto a Value of 0'
             })
         }
     </script>

@@ -185,14 +185,21 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .overview .content .details .detail__body .form .form__holder .radio__group {
-  display: flex;
-  align-items: center;
   margin-bottom: 1.5rem;
   height: 2rem;
 }
-.overview .content .details .detail__body .form .form__holder .radio__group .radio__part {
+.overview .content .details .detail__body .form .form__holder .radio__group .radio__label {
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.overview .content .details .detail__body .form .form__holder .radio__group .radio__container {
+  display: flex;
+  align-items: center;
+}
+.overview .content .details .detail__body .form .form__holder .radio__group .radio__container .radio__part {
   color: grey;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   margin-right: 2rem;
 }
 .overview .content .details .detail__body .form .form__holder .select__group {
@@ -217,7 +224,7 @@ body {
   padding-bottom: 0.7rem;
 }
 .overview .content .details .detail__body .form .form__holder .form__group {
-  margin-bottom: 0.3rem;
+  margin-top: 1rem;
 }
 .overview .content .details .detail__body .form .form__holder .form__group .form__input {
   padding: 0.5rem 0.7rem;
@@ -237,6 +244,14 @@ body {
   margin-top: 0.4rem;
   display: inline-block;
   transition: all 0.4s;
+}
+.overview .content .details .detail__body .form .form__holder .form__group .form__input::-moz-placeholder {
+  font-size: 0.75rem;
+  color: black;
+}
+.overview .content .details .detail__body .form .form__holder .form__group .form__input::placeholder {
+  font-size: 0.75rem;
+  color: black;
 }
 .overview .content .details .detail__body .form .form__holder .form__group .form__input:-moz-placeholder-shown + .form__label {
   opacity: 0;

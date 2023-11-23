@@ -99,7 +99,7 @@
                         <form class="form__holder" action="/user/profile" method="POST">
                             <div class="form__container">
                                 <div class="form__group">
-                                    <input type="number" placeholder="Enter age" name="Age" id="name" class="form__input" required>
+                                    <input type="number" placeholder="Enter age" name="Age" class="form__input" required>
                                     <label for="Age" class="form__label"> Age</label>
                                 </div>
                                 <div class="select__group">
@@ -123,13 +123,16 @@
                                     </select>
                                 </div>
                                 <div class="radio__group">
-                                    <div class="radio__part">
-                                        <input type="radio" id="male" value="0" name="Attrition">
-                                        <label for="Attrition"> No </label>
-                                    </div>
-                                    <div class="radio__part">
-                                        <input type="radio" id="female" value="1" name="Attrition">
-                                        <label for="Attrition"> Yes </label>
+                                    <p class="radio__label"> Attrition </p>
+                                    <div class="radio__container">
+                                        <div class="radio__part">
+                                            <input type="radio" id="male" value="0" name="Attrition">
+                                            <label for="Attrition"> No </label>
+                                        </div>
+                                        <div class="radio__part">
+                                            <input type="radio" id="female" value="1" name="Attrition">
+                                            <label for="Attrition"> Yes </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="select__group">
@@ -140,6 +143,10 @@
                                         <option value="1" class="select__option">Travel-Frequently</option>
                                         <option value="2" class="select__option">Travel-Rarely</option>
                                     </select>
+                                </div>
+                                <div class="form__group">
+                                    <input type="number" placeholder="Percentage of salary hike" name="PercentSalaryHike" class="form__input" required>
+                                    <label for="PercentSalaryHike" class="form__label"> Percent Salary Hike</label>
                                 </div>
                                 <div class="select__group">
                                     <label for="Department" class="select__label"> Department</label>
@@ -162,6 +169,10 @@
                                         <option value="5" class="select__option">Technical Degree</option>
                                     </select>
                                 </div>
+                                <div class="form__group">
+                                    <input type="number" placeholder="Years since last promotion" name="YearsSinceLastPromotion" class="form__input" required>
+                                    <label for="YearsSinceLastPromotion" class="form__label"> Years Since Last Promotion</label>
+                                </div>
                                 <div class="select__group">
                                     <label for="JobRole" class="select__label"> Job Role</label>
                                     <select name="JobRole" id="" class="select__input">
@@ -177,16 +188,34 @@
                                         <option value="8" class="select__option">Sales Representative</option>
                                     </select>
                                 </div>
+                                <div class="form__group">
+                                    <input type="number" placeholder="Years with current manager" name="YearsWithCurrManager" class="form__input" required>
+                                    <label for="YearsWithCurrManager" class="form__label"> Years With Current Manager</label>
+                                </div>
                             </div>
                             <div class="form__container">
+                                <div class="select__group">
+                                    <label for="JobLevel" class="select__label"> Job Level </label>
+                                    <select name="JobLevel" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="1" class="select__option">1</option>
+                                        <option value="2" class="select__option">2</option>
+                                        <option value="3" class="select__option">3</option>
+                                        <option value="4" class="select__option">4</option>
+                                        <option value="5" class="select__option">5</option>
+                                    </select>
+                                </div>
                                 <div class="radio__group">
-                                    <div class="radio__part">
-                                        <input type="radio" id="male" name="Gender">
-                                        <label for="Gender"> Male </label>
-                                    </div>
-                                    <div class="radio__part">
-                                        <input type="radio" id="female" name="Gender">
-                                        <label for="Gender"> Female </label>
+                                    <p class="radio__label"> Pick Gender </p>
+                                    <div class="radio__container">
+                                        <div class="radio__part">
+                                            <input type="radio" value="1" name="Gender">
+                                            <label for="Gender"> Male </label>
+                                        </div>
+                                        <div class="radio__part">
+                                            <input type="radio" value="2" name="Gender">
+                                            <label for="Gender"> Female </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="select__group">
@@ -210,6 +239,10 @@
                                         <option value="4" class="select__option">Very High</option>
                                     </select>
                                 </div>
+                                <div class="form__group">
+                                    <input type="number" placeholder="Monthly Income" name="MonthlyIncome" class="form__input" required>
+                                    <label for="MonthlyIncome" class="form__label"> Monthly Income</label>
+                                </div>
                                 <div class="select__group">
                                     <label for="JobSatisfaction" class="select__label"> Job Satisfaction </label>
                                     <select name="JobSatisfaction" id="" class="select__input">
@@ -219,6 +252,10 @@
                                         <option value="3" class="select__option">High</option>
                                         <option value="4" class="select__option">Very High</option>
                                     </select>
+                                </div>
+                                <div class="form__group">
+                                    <input type="number" placeholder="Years At Company" name="YearsAtCompany" class="form__input" required>
+                                    <label for="YearsAtCompany" class="form__label"> Years At Company</label>
                                 </div>
                                 <div class="select__group">
                                     <label for="PerformanceRating" class="select__label"> Performance Rating </label>
@@ -240,6 +277,10 @@
                                         <option value="4" class="select__option">Very High</option>
                                     </select>
                                 </div>
+                                <div class="form__group">
+                                    <input type="number" placeholder="Distance from home in km" name="DistanceFromHome" id="name" class="form__input" required>
+                                    <label for="DistanceFromHome" class="form__label"> Distance From Home</label>
+                                </div>
                                 <div class="select__group">
                                     <label for="MaritalStatus" class="select__label"> Marital Status </label>
                                     <select name="MaritalStatus" id="" class="select__input">
@@ -248,6 +289,10 @@
                                         <option value="1" class="select__option">Married</option>
                                         <option value="2" class="select__option">Single</option>
                                     </select>
+                                </div>
+                                <div class="form__group">
+                                    <input type="number" placeholder="Total working years" name="TotalWorkingYears" class="form__input" required>
+                                    <label for="TotalWorkingYears" class="form__label"> Total Working Years</label>
                                 </div>
                                 <button class="btn" type="submit"> Submit Details </button>
                             </div>
