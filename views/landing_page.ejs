@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main class="overview">
+        <div class="header">
+            <div class="logo">
+                <div class="image-holder">
+                    <i class="fa fa-ravelry mylogo"></i>
+                </div>
+                <div class="text-holder">
+                    <div class="main">api</div>
+                    <div class="sub">tester</div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a class="nav__tag" href="#">Home</a> </li>
+                     <li class="nav__item"> <a class="nav__tag" href="#">Services</a> </li>
+                     <li class="nav__item"> <a class="nav__tag" href="#">Payment</a> </li>
+                     <li class="nav__item"> <a class="nav__tag" href="#">Contact</a> </li>
+                     <li class="nav__item"> <a class="nav__tag" href="#">T & C</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="profile">
+                    <i class="fa fa-user-circle profcon"></i>
+                    <div class="welcome">Hello, user</div>
+                </div>
+                <div class="info">
+                    <div class="info__holder">
+                        <i class="fa fa-dashboard info__icon"></i>
+                        <a class="info__text" href="#">Dashboard</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-user info__icon"></i>
+                        <a class="info__text" href="#">My Profile</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-location-arrow info__icon"></i>
+                        <a class="info__text" href="#">My Listings</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-plus info__icon"></i>
+                        <a class="info__text" href="#">Add New Listing</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-calendar info__icon"></i>
+                        <a class="info__text" href="#">All in One Calendar</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-heart info__icon"></i>
+                        <a class="info__text" href="#">Favorites</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-upload info__icon"></i>
+                        <a class="info__text" href="#">My Uploads</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-bell-slash info__icon"></i>
+                        <a class="info__text" href="#">My Notifications</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-video-camera info__icon"></i>
+                        <a class="info__text" href="#">My Reservations</a>
+                    </div>
+                    <div class="info__holder">
+                        <i class="fa fa-power-off info__icon"></i>
+                        <a class="info__text" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="detail__title">
+                    <div class="title">
+                        <h5> My Profile </h5>
+                    </div>
+                    <div class="notification">
+                        <div class="page"> Front Page </div>
+                        <div class="notify">
+                            <i class="fa fa-bell notify-icon"></i>
+                            <sup class="notify-num">3</sup>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail__body">
+                    <div class="form">
+                        <div class="title">
+                            <p>Your Details</p>
+                        </div>
+                        <form class="form__holder" action="/user/profile" method="POST">
+                            <div class="form__container">
+                                <div class="form__group">
+                                    <input type="number" placeholder="Enter age" name="Age" id="name" class="form__input" required>
+                                    <label for="Age" class="form__label"> Age</label>
+                                </div>
+                                <div class="select__group">
+                                    <label for="JobInvolvement" class="select__label"> Job Involvement</label>
+                                    <select name="JobInvolvement" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="1" class="select__option">Low</option>
+                                        <option value="2" class="select__option">Medium</option>
+                                        <option value="3" class="select__option">High</option>
+                                        <option value="4" class="select__option">Very High</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="WorkLifeBalance" class="select__label"> Work Life Balance</label>
+                                    <select name="WorkLifeBalance" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="1" class="select__option">Bad</option>
+                                        <option value="2" class="select__option">Good</option>
+                                        <option value="3" class="select__option">Better</option>
+                                        <option value="4" class="select__option">Best</option>
+                                    </select>
+                                </div>
+                                <div class="radio__group">
+                                    <div class="radio__part">
+                                        <input type="radio" id="male" value="0" name="Attrition">
+                                        <label for="Attrition"> No </label>
+                                    </div>
+                                    <div class="radio__part">
+                                        <input type="radio" id="female" value="1" name="Attrition">
+                                        <label for="Attrition"> Yes </label>
+                                    </div>
+                                </div>
+                                <div class="select__group">
+                                    <label for="BusinessTravel" class="select__label"> Business Travel</label>
+                                    <select name="BusinessTravel" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="0" class="select__option">Non-Travel</option>
+                                        <option value="1" class="select__option">Travel-Frequently</option>
+                                        <option value="2" class="select__option">Travel-Rarely</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="Department" class="select__label"> Department</label>
+                                    <select name="Department" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="0" class="select__option">Human Resources</option>
+                                        <option value="1" class="select__option">Research & Development</option>
+                                        <option value="2" class="select__option">Sales</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="EducationField" class="select__label"> Education Field</label>
+                                    <select name="EducationField" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="0" class="select__option">Human Resources</option>
+                                        <option value="1" class="select__option">Life Sciences</option>
+                                        <option value="2" class="select__option">Marketing</option>
+                                        <option value="3" class="select__option">Medical</option>
+                                        <option value="4" class="select__option">Other</option>
+                                        <option value="5" class="select__option">Technical Degree</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="JobRole" class="select__label"> Job Role</label>
+                                    <select name="JobRole" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="0" class="select__option">Healthcare Representative</option>
+                                        <option value="1" class="select__option">Human Resources</option>
+                                        <option value="2" class="select__option">Laboratory Technician</option>
+                                        <option value="3" class="select__option">Manager</option>
+                                        <option value="4" class="select__option">Manufacturing Director</option>
+                                        <option value="5" class="select__option">Research Director</option>
+                                        <option value="6" class="select__option">Research Scientist</option>
+                                        <option value="7" class="select__option">Sales Executive</option>
+                                        <option value="8" class="select__option">Sales Representative</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__container">
+                                <div class="radio__group">
+                                    <div class="radio__part">
+                                        <input type="radio" id="male" name="Gender">
+                                        <label for="Gender"> Male </label>
+                                    </div>
+                                    <div class="radio__part">
+                                        <input type="radio" id="female" name="Gender">
+                                        <label for="Gender"> Female </label>
+                                    </div>
+                                </div>
+                                <div class="select__group">
+                                    <label for="EducationLevel" class="select__label"> Education Level </label>
+                                    <select name="EducationLevel" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="1" class="select__option">Below College</option>
+                                        <option value="2" class="select__option">College</option>
+                                        <option value="3" class="select__option">Bachelor</option>
+                                        <option value="4" class="select__option">Master</option>
+                                        <option value="5" class="select__option">Doctor</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="EnvironmentSatisfaction" class="select__label"> Environment Satisfaction </label>
+                                    <select name="EnvironmentSatisfaction" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="1" class="select__option">Low</option>
+                                        <option value="2" class="select__option">Medium</option>
+                                        <option value="3" class="select__option">High</option>
+                                        <option value="4" class="select__option">Very High</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="JobSatisfaction" class="select__label"> Job Satisfaction </label>
+                                    <select name="JobSatisfaction" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="1" class="select__option">Low</option>
+                                        <option value="2" class="select__option">Medium</option>
+                                        <option value="3" class="select__option">High</option>
+                                        <option value="4" class="select__option">Very High</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="PerformanceRating" class="select__label"> Performance Rating </label>
+                                    <select name="PerformanceRating" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="1" class="select__option">Low</option>
+                                        <option value="2" class="select__option">Good</option>
+                                        <option value="3" class="select__option">Excellent</option>
+                                        <option value="4" class="select__option">Outstanding</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="RelationshipSatisfaction" class="select__label"> Relationship Satisfaction </label>
+                                    <select name="RelationshipSatisfaction" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="1" class="select__option">Low</option>
+                                        <option value="2" class="select__option">Medium</option>
+                                        <option value="3" class="select__option">High</option>
+                                        <option value="4" class="select__option">Very High</option>
+                                    </select>
+                                </div>
+                                <div class="select__group">
+                                    <label for="MaritalStatus" class="select__label"> Marital Status </label>
+                                    <select name="MaritalStatus" id="" class="select__input">
+                                        <option value="" hidden selected> -- Choose One --</option>
+                                        <option value="0" class="select__option">Divorced</option>
+                                        <option value="1" class="select__option">Married</option>
+                                        <option value="2" class="select__option">Single</option>
+                                    </select>
+                                </div>
+                                <button class="btn" type="submit"> Submit Details </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="rightbar">
+                        <p>checkers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

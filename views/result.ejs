@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <main>
+        <div class="all-result">
+            <h2 class="header"> Phishing info </h2>
+            <div class="result-contaiiner">
+                <% if(phishing === "good") { %>
+                    <p class="result"><%= phishing %></p>
+                    <button onclick="showSuccessAlert()">Verify</button>
+                <% } else { %>
+                    <p class="result"><%= phishing %></p>
+                    <button onclick="showConfirmAlert()">Verify</button>
+                <% } %>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // if bening url, call success
+        function showSuccessAlert() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: 'Got Pass, value of 1!'
+            });
+        }
+
+        // if phishing url, notify continuity
+        function showConfirmAlert() {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Phishing Url Detected!',
+                text: 'Are you sure you want to proceed?',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, proceed',
+                cancelButtonText: 'Cancel'
+            }).then(result => {
+                if(result.isConfirmed){
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Confirm!',
+                        text: 'Now redirecting'
+                    })
+                    // call the link here
+                } else if (result.dismiss === Swal.DismissReason.cancel){
+                    Swal.fire({
+                        icon: 'info',
+                        title: 'Cancel!',
+                        text: 'You canceled operation'
+                    })
+                }
+            })
+        }
+    </script>
+</body>
+</html>

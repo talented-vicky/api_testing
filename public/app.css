@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 1.3rem;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+.overview .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5rem;
+  background-color: white;
+}
+.overview .header .logo {
+  display: flex;
+  font-size: 0.6rem;
+}
+.overview .header .logo .image-holder .mylogo {
+  font-size: 1.7rem;
+  padding: 0.6rem;
+}
+.overview .header .logo .text-holder {
+  display: flex;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.overview .header .logo .text-holder .main {
+  font-weight: 300;
+  padding-top: 0.2rem;
+  height: 0.7rem;
+}
+.overview .header .logo .text-holder .sub {
+  font-weight: 600;
+  height: 0.8rem;
+}
+.overview .header .nav .nav__list {
+  list-style: none;
+  display: flex;
+}
+.overview .header .nav .nav__list .nav__item {
+  margin-right: 2rem;
+}
+.overview .header .nav .nav__list .nav__item .nav__tag {
+  color: grey;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.overview .content {
+  margin-top: 1rem;
+  display: flex;
+}
+.overview .content .sidebar {
+  background-color: white;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+}
+.overview .content .sidebar .profile {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overview .content .sidebar .profile .profcon {
+  font-size: 3.5rem;
+}
+.overview .content .sidebar .profile .welcome {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.overview .content .sidebar .info {
+  display: flex;
+  flex-direction: column;
+}
+.overview .content .sidebar .info .info__holder {
+  display: flex;
+  padding: 0.6rem 0.8rem;
+  margin-right: 0.2rem;
+}
+.overview .content .sidebar .info .info__holder .info__icon {
+  font-size: 0.65rem;
+  margin-right: 1.3rem;
+  color: grey;
+}
+.overview .content .sidebar .info .info__holder .info__text {
+  color: grey;
+  font-size: 0.55rem;
+  text-decoration: none;
+}
+.overview .content .sidebar .info .info__holder:hover {
+  color: rgb(163, 184, 184);
+  background-color: rgb(240, 240, 240);
+}
+.overview .content .details {
+  width: 60rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.overview .content .details .detail__title {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.overview .content .details .detail__title .title {
+  font-size: 2rem;
+}
+.overview .content .details .detail__title .notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview .content .details .detail__title .notification .page {
+  font-size: 0.7rem;
+  background-color: white;
+  color: grey;
+  padding: 0.5rem 0.9rem;
+  border-radius: 5rem;
+  margin-right: 1rem;
+}
+.overview .content .details .detail__title .notification .notify {
+  display: flex;
+}
+.overview .content .details .detail__title .notification .notify .notify-icon {
+  color: black;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+.overview .content .details .detail__title .notification .notify .notify-num {
+  height: 0.8rem;
+  width: 0.8rem;
+  color: white;
+  font-size: 0.6rem;
+  border-radius: 50%;
+  background-color: red;
+}
+.overview .content .details .detail__body {
+  display: flex;
+  justify-content: start;
+}
+.overview .content .details .detail__body .form {
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.overview .content .details .detail__body .form .title {
+  margin-bottom: 1rem;
+}
+.overview .content .details .detail__body .form .form__holder {
+  display: flex;
+}
+.overview .content .details .detail__body .form .form__holder button.btn {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  padding: 0.6rem 2rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 0.7rem;
+}
+.overview .content .details .detail__body .form .form__holder button.btn:hover {
+  color: beige;
+  background-color: aquamarine;
+}
+.overview .content .details .detail__body .form .form__holder button.btn:active,
+.overview .content .details .detail__body .form .form__holder button.btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.overview .content .details .detail__body .form .form__holder .radio__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  height: 2rem;
+}
+.overview .content .details .detail__body .form .form__holder .radio__group .radio__part {
+  color: grey;
+  font-size: 0.9rem;
+  margin-right: 2rem;
+}
+.overview .content .details .detail__body .form .form__holder .select__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.overview .content .details .detail__body .form .form__holder .select__group .select__label {
+  font-size: 0.8rem;
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+.overview .content .details .detail__body .form .form__holder .select__group .select__input {
+  width: 90%;
+  border-radius: 3px;
+  padding: 0.5rem 0.7rem;
+  background-color: rgb(240, 240, 240);
+  border: none;
+}
+.overview .content .details .detail__body .form .form__holder .select__group .select__input .select__option {
+  font-size: 0.65rem;
+  padding-bottom: 0.7rem;
+}
+.overview .content .details .detail__body .form .form__holder .form__group {
+  margin-bottom: 0.3rem;
+}
+.overview .content .details .detail__body .form .form__holder .form__group .form__input {
+  padding: 0.5rem 0.7rem;
+  border-bottom: 3px solid transparent;
+  width: 80%;
+  font-family: inherit;
+  color: inherit;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  display: flex;
+}
+.overview .content .details .detail__body .form .form__holder .form__group .form__label {
+  font-size: 0.7rem;
+  margin-left: 0.4rem;
+  margin-top: 0.4rem;
+  display: inline-block;
+  transition: all 0.4s;
+}
+.overview .content .details .detail__body .form .form__holder .form__group .form__input:-moz-placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem);
+}
+.overview .content .details .detail__body .form .form__holder .form__group .form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem);
+}
+.overview .content .details .detail__body .rightbar {
+  margin-left: 1rem;
+  background-color: white;
+  height: 15rem;
+}/*# sourceMappingURL=app.css.map */
