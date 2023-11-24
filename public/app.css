@@ -75,6 +75,7 @@ body {
 }
 .overview .content .sidebar .profile .profcon {
   font-size: 3.5rem;
+  color: rgb(63, 155, 124);
 }
 .overview .content .sidebar .profile .welcome {
   font-size: 0.8rem;
@@ -164,6 +165,7 @@ body {
 }
 .overview .content .details .detail__body .form .form__holder {
   display: flex;
+  width: 25rem;
 }
 .overview .content .details .detail__body .form .form__holder button.btn {
   margin-top: 1rem;
@@ -173,10 +175,12 @@ body {
   transition: all 0.2s;
   position: relative;
   font-size: 0.7rem;
+  color: #fff;
+  background-color: rgb(48, 114, 212);
 }
 .overview .content .details .detail__body .form .form__holder button.btn:hover {
-  color: beige;
-  background-color: aquamarine;
+  color: rgb(48, 114, 212);
+  background-color: #fff;
 }
 .overview .content .details .detail__body .form .form__holder button.btn:active,
 .overview .content .details .detail__body .form .form__holder button.btn:focus {
@@ -266,5 +270,31 @@ body {
 .overview .content .details .detail__body .rightbar {
   margin-left: 1rem;
   background-color: white;
-  height: 15rem;
+  display: flex;
+  width: 15rem;
+  flex-direction: column;
+}
+.overview .content .details .detail__body .rightbar .rightbar__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.overview .content .details .detail__body .rightbar .rightbar__container .icon {
+  color: rgb(63, 155, 124);
+  font-size: 4rem;
+  margin-bottom: 0.3rem;
+}
+.overview .content .details .detail__body .rightbar .rightbar__container .image {
+  padding: 0.4rem 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(48, 114, 212);
+}
+.overview .content .details .detail__body .rightbar .rightbar__container .text {
+  font-size: 0.65rem;
+  text-align: justify;
 }/*# sourceMappingURL=app.css.map */

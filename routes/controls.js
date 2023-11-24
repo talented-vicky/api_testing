@@ -16,8 +16,6 @@ router.post('/user/profile', async (req, res) => {
     TotalWorkingYears, YearsAtCompany, YearsSinceLastPromotion, YearsWithCurrManager, 
     JobInvolvement, PerformanceRating } = req.body;
 
-    console.log(Age)
-    console.log(EnvironmentSatisfaction)
     
     const apimodel = "https://employ-api.onrender.com/predict/";
     try {
@@ -33,16 +31,18 @@ router.post('/user/profile', async (req, res) => {
             JobInvolvement: Number(JobInvolvement), PerformanceRating: Number(PerformanceRating)
         });
     
-        console.log(response)
-        if(!response){
+        const data = JSON.stringify(response.data).split(":")[1]
+        const final = Number(data.substring(0,1))
+
+        if(!data){
             const error = new Error('API returned null')
             error.statusCode = 500;
             throw error
         }
-        const value = response.body
 
         res.render('result', {
-            title: "Result", value
+            title: "Result", 
+            value: final
         })
     } catch (error) {
         console.log(error)

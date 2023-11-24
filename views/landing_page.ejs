@@ -112,6 +112,10 @@
                                         <option value="4" class="select__option">Very High</option>
                                     </select>
                                 </div>
+                                <div class="form__group">
+                                    <input type="number" placeholder="Number of Companies Worked" name="NumCompaniesWorked" class="form__input" required>
+                                    <label for="NumCompaniesWorked" class="form__label"> Number Companies Worked</label>
+                                </div>
                                 <div class="select__group">
                                     <label for="WorkLifeBalance" class="select__label"> Work Life Balance</label>
                                     <select name="WorkLifeBalance" id="" class="select__input">
@@ -122,7 +126,7 @@
                                         <option value="4" class="select__option">Best</option>
                                     </select>
                                 </div>
-                                <div class="radio__group">
+                                <!-- <div class="radio__group">
                                     <p class="radio__label"> Attrition </p>
                                     <div class="radio__container">
                                         <div class="radio__part">
@@ -134,7 +138,7 @@
                                             <label for="Attrition"> Yes </label>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="select__group">
                                     <label for="BusinessTravel" class="select__label"> Business Travel</label>
                                     <select name="BusinessTravel" id="" class="select__input">
@@ -157,7 +161,7 @@
                                         <option value="2" class="select__option">Sales</option>
                                     </select>
                                 </div>
-                                <div class="select__group">
+                                <!-- <div class="select__group">
                                     <label for="EducationField" class="select__label"> Education Field</label>
                                     <select name="EducationField" id="" class="select__input">
                                         <option value="" hidden selected> -- Choose One --</option>
@@ -168,7 +172,7 @@
                                         <option value="4" class="select__option">Other</option>
                                         <option value="5" class="select__option">Technical Degree</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div class="form__group">
                                     <input type="number" placeholder="Years since last promotion" name="YearsSinceLastPromotion" class="form__input" required>
                                     <label for="YearsSinceLastPromotion" class="form__label"> Years Since Last Promotion</label>
@@ -219,8 +223,8 @@
                                     </div>
                                 </div>
                                 <div class="select__group">
-                                    <label for="EducationLevel" class="select__label"> Education Level </label>
-                                    <select name="EducationLevel" id="" class="select__input">
+                                    <label for="Education" class="select__label"> Education </label>
+                                    <select name="Education" id="" class="select__input">
                                         <option value="" hidden selected> -- Choose One --</option>
                                         <option value="1" class="select__option">Below College</option>
                                         <option value="2" class="select__option">College</option>
@@ -267,7 +271,7 @@
                                         <option value="4" class="select__option">Outstanding</option>
                                     </select>
                                 </div>
-                                <div class="select__group">
+                                <!-- <div class="select__group">
                                     <label for="RelationshipSatisfaction" class="select__label"> Relationship Satisfaction </label>
                                     <select name="RelationshipSatisfaction" id="" class="select__input">
                                         <option value="" hidden selected> -- Choose One --</option>
@@ -276,7 +280,7 @@
                                         <option value="3" class="select__option">High</option>
                                         <option value="4" class="select__option">Very High</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div class="form__group">
                                     <input type="number" placeholder="Distance from home in km" name="DistanceFromHome" id="name" class="form__input" required>
                                     <label for="DistanceFromHome" class="form__label"> Distance From Home</label>
@@ -299,7 +303,16 @@
                         </form>
                     </div>
                     <div class="rightbar">
-                        <p>checkers</p>
+                        <div class="rightbar__container">
+                            <div class="icon"> <i class="fa fa-user-circle"></i> </div>
+                            <div class="image"> Upload Image </div>
+                            <p class="text">Upload an image eithere from your drive, file storage or allow this app access your camera to take a real-time image of you</p>
+                        </div>
+                        <div class="rightbar__container">
+                            <div class="icon"> <i class="fa fa-user"></i> </div>
+                            <div class="image"> Upload an Id Scan </div>
+                            <p class="text">Using an id scan upload is seemless, just scan your id and your profile picture will be updated on the fly</p>
+                        </div>
                     </div>
                 </div>
             </div>
