@@ -159,13 +159,26 @@ body {
                     padding: 1rem;
                     background-color: #ffff;
                     display: flex;
+                    // width: 40rem; remove this
+                    width: 40rem;
                     flex-direction: column;
                     .title {
                         margin-bottom: 1rem;
                     }
                     .form__holder {
                         display: flex;
-                        width: 25rem;
+                        width: 45rem;
+                        .form__container{
+                            width: 18rem;
+                        }
+                        // .form__container:last-child {
+                        //     margin-left: 5rem;
+                        //     width: 18rem;
+                        // } remove this
+                        .form__container:last-child {
+                            margin-left: 5rem;
+                            width: 18rem;
+                        }
                         button.btn {
                             margin-top: 1rem;
                             text-transform: uppercase;
@@ -215,7 +228,7 @@ body {
                                 margin-bottom: .5rem;
                             }
                             .select__input {
-                                width: 90%;
+                                width: 87%;
                                 border-radius: 3px;
                                 padding: .5rem .7rem;
                                 background-color: rgb(240, 240, 240);
@@ -228,6 +241,8 @@ body {
                         }
                         .form__group {
                             margin-top: 1rem;
+                            // width: 100%; change back to 85%
+                            width: 100%;
                             .form__input {
                                 padding: .5rem .7rem;
                                 border-bottom: 3px solid transparent;
@@ -259,37 +274,37 @@ body {
                         }
                     }
                 }
-                .rightbar {
-                    margin-left: 1rem;
-                    background-color: #ffff;
-                    display: flex;
-                    width: 15rem;
-                    flex-direction: column;
-                    .rightbar__container {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin-bottom: 2rem;
-                        padding: 1rem;
-                        .icon {
-                            color: rgb(63, 155, 124);
-                            font-size: 4rem;
-                            margin-bottom: .3rem;
-                        }
-                        .image {
-                            padding: .4rem 1rem;
-                            color: #fff;
-                            font-size: .8rem;
-                            margin-bottom: .5rem;
-                            border-radius: .25rem;
-                            background-color: rgb(48, 114, 212);
-                        }
-                        .text {
-                            font-size: .65rem;
-                            text-align: justify;
-                        }
-                    }
-                }
+                // .rightbar {
+                //     margin-left: 1rem;
+                //     background-color: #ffff;
+                //     display: flex;
+                //     width: 15rem;
+                //     flex-direction: column;
+                //     .rightbar__container {
+                //         display: flex;
+                //         flex-direction: column;
+                //         align-items: center;
+                //         margin-bottom: 2rem;
+                //         padding: 1rem;
+                //         .icon {
+                //             color: rgb(63, 155, 124);
+                //             font-size: 4rem;
+                //             margin-bottom: .3rem;
+                //         }
+                //         .image {
+                //             padding: .4rem 1rem;
+                //             color: #fff;
+                //             font-size: .8rem;
+                //             margin-bottom: .5rem;
+                //             border-radius: .25rem;
+                //             background-color: rgb(48, 114, 212);
+                //         }
+                //         .text {
+                //             font-size: .65rem;
+                //             text-align: justify;
+                //         }
+                //     }
+                // }
             }
         }
     }
