@@ -84,6 +84,9 @@ body {
 .overview .content .sidebar .info {
   display: flex;
   flex-direction: column;
+  font-size: 0.9rem;
+  text-align: justify;
+  padding: 1rem;
 }
 .overview .content .sidebar .info .info__holder {
   display: flex;
