@@ -59,7 +59,7 @@
         // if user profile passes, call success
         function showSuccessAlert() {
             Swal.fire({
-                icon: 'success',
+                icon: 'error',
                 title: 'Attrition level threat',
                 text: 'Employee will be leaving current company'
             });
@@ -68,7 +68,7 @@
         // otherwise, call failed function
         function showFailedAlert() {
             Swal.fire({
-                icon: 'error',
+                icon: 'success',
                 title: 'Safe! Attrition passed',
                 text: 'Employee will not be leaving'
             })
